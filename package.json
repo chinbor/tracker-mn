@@ -1,7 +1,7 @@
 {
   "name": "tracker-mn",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "packageManager": "pnpm@7.30.0",
   "description": "a practicing for tracker",
   "author": "Chinbor Mn <chinbor.mn@proton.me>",
