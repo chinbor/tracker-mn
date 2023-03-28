@@ -1,0 +1,68 @@
+{
+  "name": "tracker-mn",
+  "type": "module",
+  "version": "0.0.1",
+  "packageManager": "pnpm@7.30.0",
+  "description": "a practicing for tracker",
+  "author": "Chinbor Mn <chinbor.mn@proton.me>",
+  "license": "MIT",
+  "homepage": "https://github.com/chinbor/tracker-mn#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chinbor/tracker-mn.git"
+  },
+  "bugs": "https://github.com/chinbor/tracker-mn/issues",
+  "keywords": [
+    "tracker",
+    "data",
+    "tools"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "lint": "eslint .",
+    "release": "bumpp package.json --commit --push --tag",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.37.0",
+    "@antfu/ni": "^0.20.0",
+    "@antfu/utils": "^0.7.2",
+    "@types/node": "^18.15.5",
+    "@vitest/browser": "^0.29.7",
+    "bumpp": "^9.0.0",
+    "eslint": "^8.36.0",
+    "esno": "^0.16.3",
+    "jsdom": "^21.1.1",
+    "lint-staged": "^13.2.0",
+    "msw": "^1.2.1",
+    "pnpm": "^7.30.0",
+    "rimraf": "^4.4.0",
+    "simple-git-hooks": "^2.8.1",
+    "typescript": "^5.0.2",
+    "unbuild": "^1.1.2",
+    "vite": "^4.2.1",
+    "vitest": "^0.29.7",
+    "webdriverio": "^8.6.9"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
