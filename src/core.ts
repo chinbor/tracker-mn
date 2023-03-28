@@ -1,5 +1,5 @@
 import { MouseEventList, TrackerConfig } from './config'
-import type { DefaultOptions, Options } from './types'
+import type { DefaultOptions, Options, reportTrackerData } from './types'
 import { createHistoryEvent } from './utils'
 
 export class Tracker {
@@ -18,7 +18,7 @@ export class Tracker {
     this.data.extra = extra
   }
 
-  public sendTracker<T>(data: T) {
+  public sendTracker(data: reportTrackerData) {
     this.reportTracker(data)
   }
 
@@ -107,7 +107,7 @@ export class Tracker {
     })
   }
 
-  private reportTracker<T>(data: T) {
+  private reportTracker(data: reportTrackerData) {
     const params = Object.assign(this.data, data, { time: new Date().getTime() })
 
     const headers = {
