@@ -29,4 +29,4 @@ const tracker = new Tracker({
   
 ## License
 
-[MIT](./LICENSE) License © 2023 [chinbor](https://github.com/chinbor)
+[MIT](https://github.com/chinbor/tracker-mn/blob/main/LICENSE) License © 2023 [chinbor](https://github.com/chinbor)
