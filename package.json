@@ -37,7 +37,7 @@
     "release": "bumpp package.json --commit --push --tag",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
-    "postinstall": "npx simple-git-hook"
+    "postinstall": "npx simple-git-hooks"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.37.0",
