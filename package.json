@@ -32,7 +32,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "unbuild",
+    "build": "tsup",
     "lint": "eslint .",
     "release": "bumpp package.json --commit --push --tag",
     "test": "vitest",
@@ -54,8 +54,8 @@
     "pnpm": "^7.30.0",
     "rimraf": "^4.4.0",
     "simple-git-hooks": "^2.8.1",
+    "tsup": "^6.7.0",
     "typescript": "^5.0.2",
-    "unbuild": "^1.1.2",
     "vite": "^4.2.1",
     "vitest": "^0.29.7",
     "webdriverio": "^8.6.9"
